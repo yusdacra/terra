@@ -72,9 +72,10 @@ in {
       t = "${pkgBin eza} -lhg -T";
       ta = "${pkgBin eza} -lhg -a -T";
       n = nixBin;
+      nb = "${nixBin} build";
       nf = "${nixBin} flake";
       nfu = "${nixBin} flake update";
-      nfui = "${nixBin} flake lock --update-input";
+      nfui = "${nixBin} flake update";
       nfs = "${nixBin} flake show";
       nsh = "${nixBin} shell";
       nix-store-refs = "nix-store -qR";

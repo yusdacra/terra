@@ -7,6 +7,9 @@
       protocolUseSSL = true;
       allowEmailRegister = false;
       allowAnonymous = false;
+      allowAnonymousEdits = true;
+      allowFreeURL = true;
+      requireFreeURLAuthentication = true;
     };
   };
 
