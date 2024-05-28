@@ -9,7 +9,7 @@
       builtins.mapAttrs
       (_: v: {flake = v;})
       (lib.filterAttrs (_: v: v ? outputs) inputs);
-    package = pkgs.nix;
+    package = pkgs.nixVersions.latest;
     gc.automatic = false;
     optimise.automatic = true;
     extraOptions = ''

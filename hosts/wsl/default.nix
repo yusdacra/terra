@@ -11,6 +11,7 @@
       ../../users/root
       ../../users/firewatch
       inputs.nixos-wsl.nixosModules.wsl
+      inputs.agenix.nixosModules.default
     ]
     ++ (tlib.importFolder (toString ./modules));
 
@@ -22,6 +23,9 @@
   networking.hostName = "wsl";
 
   environment.systemPackages = [pkgs.wget];
+  environment.sessionVariables = {
+    FLAKE = "/home/firewatch/conf";
+  };
 
   # for tailscale
   networking.firewall.checkReversePath = "loose";

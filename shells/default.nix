@@ -12,14 +12,14 @@ tlib.genPkgs (pkgs: let
       if [ -z "''${1-}" ]; then
         agenix
       else
-        RULES="/etc/nixos/secrets/secrets.nix" agenix -i /persist/keys/ssh_key "$@"
+        RULES="$FLAKE/secrets/secrets.nix" agenix -i "$FLAKE/ssh_key" "$@"
       fi
     '';
   };
 in {
   default = mkNakedShell {
     name = "prts";
-    packages = with pkgs; [git git-crypt alejandra helix agenix-wrapped rage];
+    packages = (with pkgs; [git git-crypt alejandra helix rage]) ++ [agenix-wrapped];
     shellHook = ''
       echo \"$(tput bold)welcome to PRTS, $USER$(tput sgr0)\"
     '';
