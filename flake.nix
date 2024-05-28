@@ -6,6 +6,9 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/NUR";
 
+    nixos-wsl.url = "github:nix-community/NixOS-WSL";
+    nixos-wsl.inputs.nixpkgs.follows = "nixpkgs";
+
     home.url = "github:nix-community/home-manager/master";
     home.inputs.nixpkgs.follows = "nixpkgs";
 
@@ -65,6 +68,9 @@
     naked-shell.url = "github:yusdacra/mk-naked-shell";
     naked-shell.flake = false;
 
+    nixtopo.url = "github:oddlama/nix-topology";
+    nixtopo.inputs.nixpkgs.follows = "nixpkgs";
+
     # vfio.url = "github:yusdacra/nixos-vfio";
     # vfio.inputs.nixpkgs.follows = "nixpkgs";
 
@@ -123,6 +129,13 @@
     packages = lib.mapAttrs (_: pkgs: pkgs._exported) allPkgs;
     legacyPackages = allPkgs;
     apps = miscApps // (inputs.nixinate.nixinate.x86_64-linux inputs.self);
+
+    topology = lib.mapAttrs (_: pkgs:
+      import inputs.nixtopo {
+        inherit pkgs;
+        modules = [{nixosConfigurations = {inherit (inputs.self.nixosConfigurations) wolumonde;};}];
+      })
+    allPkgs;
 
     devShells = import ./shells {inherit lib tlib inputs;};
   };

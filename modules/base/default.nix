@@ -97,7 +97,7 @@ in {
   };
   system.activationScripts.diff = ''
     if [ -z "$systemConfig" ]; then
-      ${pkgs.nixUnstable}/bin/nix store \
+      ${config.nix.package}/bin/nix store \
       --experimental-features 'nix-command' \
       diff-closures /run/current-system "$systemConfig"
     fi

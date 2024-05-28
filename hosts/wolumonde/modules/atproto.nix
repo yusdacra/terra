@@ -5,8 +5,7 @@
     mkdir -p $out
     cp ${_wellKnownFile} $out/atproto-did
   '';
-in
-{
+in {
   services.nginx.virtualHosts."gaze.systems" = {
     locations."/.well-known/".extraConfig = ''
       add_header content-type text/plain;

@@ -8,6 +8,10 @@
   cfg = config.settings;
 in {
   options = {
+    settings.enable = l.mkOption {
+      type = t.bool;
+      default = true;
+    };
     settings.iconTheme = {
       name = l.mkOption {
         type = t.str;
@@ -26,7 +30,7 @@ in {
     };
   };
 
-  config = {
+  config = l.mkIf cfg.enable {
     gtk.iconTheme = cfg.iconTheme;
   };
 }

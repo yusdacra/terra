@@ -1,4 +1,8 @@
-{inputs, pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   systemd.user.services.discordrp-mpris = {
     Install = {
       WantedBy = ["default.target"];
