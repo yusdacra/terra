@@ -47,10 +47,10 @@
     agenix.url = "github:ryantm/agenix";
     agenix.inputs.nixpkgs.follows = "nixpkgs";
 
-    musikquad.url = "github:yusdacra/musikquadrupled";
+    musikquad.url = "git+https://git.gaze.systems/dusk/musikquadrupled.git";
     musikquad.inputs.nixpkgs.follows = "nixpkgs";
 
-    musikspider.url = "github:yusdacra/musikspider";
+    musikspider.url = "git+https://git.gaze.systems/dusk/musikspider.git";
     musikspider.inputs.nixpkgs.follows = "nixpkgs";
 
     limbusart.url = "git+https://git.gaze.systems/dusk/limbusart.git";

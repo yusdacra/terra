@@ -6,7 +6,7 @@
   services.nginx.virtualHosts."gaze.systems" = {
     useACMEHost = "gaze.systems";
     forceSSL = true;
-    root = "${inputs.blog.packages.${pkgs.system}.site}";
+    root = "${inputs.blog.packages.${pkgs.system}.default}";
     locations."/".extraConfig = ''
       add_header cache-control max-age=1800;
     '';
