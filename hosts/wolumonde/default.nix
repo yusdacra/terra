@@ -1,6 +1,7 @@
 {
   inputs,
   tlib,
+  pkgs,
   ...
 }: {
   imports =
@@ -9,6 +10,8 @@
       inputs.nixtopo.nixosModules.default
     ]
     ++ (tlib.importFolder (toString ./modules));
+
+  environment.systemPackages = [pkgs.magic-wormhole-rs];
 
   boot.tmp.cleanOnBoot = true;
   zramSwap.enable = true;
