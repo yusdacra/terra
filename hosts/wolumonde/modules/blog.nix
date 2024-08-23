@@ -6,9 +6,9 @@
   PUBLIC_BASE_URL = "https://gaze.systems";
   pkg = inputs.blog.packages.${pkgs.system}.default.overrideAttrs (old: {
     inherit PUBLIC_BASE_URL;
-    GUESTBOOK_BASE_URL = "http://localhost:5173";
+    GUESTBOOK_BASE_URL = "http://localhost:8080";
   });
-  port = 3000;
+  port = 3003;
 in {
   users.users.website = {
     isSystemUser = true;

@@ -100,11 +100,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1724420821,
-        "narHash": "sha256-luP6c8jJNrBEbQPt/AIQ4czHm7R6fOMPc0GIL+VmQwc=",
+        "lastModified": 1724426642,
+        "narHash": "sha256-DlW/MK7fq5G0qjYdNVP4CmRIHZY0auplLPlDBdMt7z8=",
         "ref": "refs/heads/svelte",
-        "rev": "95b08631ff1b98a69f4ad7b07b686cb9a2e81151",
-        "revCount": 100,
+        "rev": "b5fda85147a84df98c6de82b75a638d16ad09ae6",
+        "revCount": 101,
         "type": "git",
         "url": "https://git.gaze.systems/dusk/website.git"
       },

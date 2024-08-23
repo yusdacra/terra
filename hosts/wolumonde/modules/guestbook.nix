@@ -5,7 +5,7 @@
 }: let
   GUESTBOOK_WEBSITE_URI = "https://gaze.systems";
   pkg = inputs.blog.packages.${pkgs.system}.guestbook;
-  port = 5173;
+  port = 8080;
 in {
   users.users.guestbook = {
     isSystemUser = true;
