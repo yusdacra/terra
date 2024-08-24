@@ -1,4 +1,5 @@
 {
+  config,
   pkgs,
   inputs,
   ...
@@ -20,17 +21,18 @@ in {
     description = "website";
     wantedBy = ["multi-user.target"];
     after = ["network.target" "guestbook.service"];
+    environment = {
+      HOME = "/var/lib/website";
+      ORIGIN = PUBLIC_BASE_URL;
+      PORT = toString port;
+    };
     serviceConfig = {
       User = "website";
       ExecStart = "${pkg}/bin/website";
       Restart = "on-failure";
       RestartSec = 5;
       WorkingDirectory = "/var/lib/website";
-      Environment = "HOME=/var/lib/website";
-      EnvironmentFile = pkgs.writeText "website-env" ''
-        ORIGIN="${PUBLIC_BASE_URL}"
-        PORT=${toString port}
-      '';
+      EnvironmentFile = config.age.secrets.websiteConfig.path;
     };
   };
 

@@ -9,4 +9,5 @@ in {
   "nixGithubAccessToken.age".publicKeys = [yusdacra];
   "nixBuildKey.age".publicKeys = [yusdacra];
   "tmodloaderServerPass.age".publicKeys = [yusdacra wolumonde];
+  "websiteConfig.age".publicKeys = [yusdacra wolumonde];
 }

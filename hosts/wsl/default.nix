@@ -24,7 +24,7 @@
 
   environment.systemPackages = [pkgs.wget];
   environment.sessionVariables = {
-    FLAKE = "/home/firewatch/conf";
+    FLAKE = "/home/firewatch/ark";
   };
 
   # for tailscale
