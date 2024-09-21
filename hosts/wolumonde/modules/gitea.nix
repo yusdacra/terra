@@ -31,6 +31,11 @@
   services.nginx.virtualHosts."git.gaze.systems" = {
     useACMEHost = "gaze.systems";
     forceSSL = true;
-    locations."/".proxyPass = "http://localhost:${toString config.services.gitea.settings.server.HTTP_PORT}";
+    locations."/" = {
+      extraConfig = ''
+        client_max_body_size 50m;
+      '';
+      proxyPass = "http://localhost:${toString config.services.gitea.settings.server.HTTP_PORT}";
+    };
   };
 }

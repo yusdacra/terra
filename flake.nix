@@ -23,7 +23,7 @@
 
     helix.url = "github:helix-editor/helix";
 
-    blog.url = "git+https://git.gaze.systems/dusk/website.git";
+    blog.url = "https://github.com/yusdacra/website/archive/refs/heads/svelte.zip";
     blog.inputs.nixpkgs.follows = "nixpkgs";
 
     bernbot.url = "github:yusdacra/bernbot";

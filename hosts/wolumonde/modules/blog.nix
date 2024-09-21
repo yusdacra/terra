@@ -41,6 +41,9 @@ in {
     forceSSL = true;
     locations."/" = {
       proxyPass = "http://localhost:${toString port}";
+      extraConfig = ''
+        add_header cache-control "no-store";
+      '';
     };
   };
 }

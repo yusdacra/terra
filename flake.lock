@@ -100,17 +100,14 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1724499372,
-        "narHash": "sha256-xUaqVgunsc7x9iQWozV+I+spSnGLUDwzNL9uHqtJCqg=",
-        "ref": "refs/heads/svelte",
-        "rev": "4f8160830325cc0d03f6cf8cd1d52f650a1d58e2",
-        "revCount": 118,
-        "type": "git",
-        "url": "https://git.gaze.systems/dusk/website.git"
+        "lastModified": 1726945396,
+        "narHash": "sha256-Q81Yf+Kw55786VXWQyhYTmpv0CkQLQc7NDCLi8D/TFw=",
+        "type": "tarball",
+        "url": "https://github.com/yusdacra/website/archive/refs/heads/svelte.zip"
       },
       "original": {
-        "type": "git",
-        "url": "https://git.gaze.systems/dusk/website.git"
+        "type": "tarball",
+        "url": "https://github.com/yusdacra/website/archive/refs/heads/svelte.zip"
       }
     },
     "conduit": {
