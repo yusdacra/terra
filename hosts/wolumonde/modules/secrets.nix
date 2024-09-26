@@ -9,4 +9,5 @@
   age.secrets.musikquadConfig.file = ../../../secrets/musikquadConfig.age;
   age.secrets.tmodloaderServerPass.file = ../../../secrets/tmodloaderServerPass.age;
   age.secrets.websiteConfig.file = ../../../secrets/websiteConfig.age;
+  age.secrets.giteaActRunnerToken.file = ../../../secrets/giteaActRunnerToken.age;
 }

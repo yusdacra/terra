@@ -19,7 +19,7 @@ tlib.genPkgs (pkgs: let
 in {
   default = mkNakedShell {
     name = "prts";
-    packages = (with pkgs; [git git-crypt alejandra helix rage]) ++ [agenix-wrapped];
+    packages = (with pkgs; [git git-crypt alejandra rage]) ++ [agenix-wrapped];
     shellHook = ''
       echo \"$(tput bold)welcome to PRTS, $USER$(tput sgr0)\"
     '';
