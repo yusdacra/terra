@@ -100,13 +100,13 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1727366047,
-        "narHash": "sha256-qeJQilEismXQ6pBUepB5LqrjvqRXYqiC9mkHH9ii28Q=",
-        "path": "/home/kirara/proj/website",
+        "lastModified": 1727370985,
+        "narHash": "sha256-dDUEMxoG3aaSDEoseVW7dapRnHIdgQkLQiFwPjo+dXQ=",
+        "path": "/home/firewatch/website",
         "type": "path"
       },
       "original": {
-        "path": "/home/kirara/proj/website",
+        "path": "/home/firewatch/website",
         "type": "path"
       }
     },

@@ -23,7 +23,7 @@
 
     helix.url = "github:helix-editor/helix";
 
-    blog.url = "path:/home/kirara/proj/website";
+    blog.url = "path:/home/firewatch/website";
     blog.inputs.nixpkgs.follows = "nixpkgs";
 
     bernbot.url = "github:yusdacra/bernbot";
