@@ -19,6 +19,9 @@
         ENABLE_AUTO_REGISTRATION = false;
         UPDATE_AVATAR = true;
       };
+      attachment = {
+        MAX_SIZE = 100;
+      };
       ui = {
         DEFAULT_SHOW_FULL_NAME = true;
         DEFAULT_THEME = "edge-dark";
