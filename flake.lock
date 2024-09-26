@@ -100,8 +100,8 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1726945396,
-        "narHash": "sha256-Q81Yf+Kw55786VXWQyhYTmpv0CkQLQc7NDCLi8D/TFw=",
+        "lastModified": 1727314821,
+        "narHash": "sha256-AIKKS9U3K6ZZst44HjkcZBncy+Nbx1QrGfO8rnD6e60=",
         "type": "tarball",
         "url": "https://github.com/yusdacra/website/archive/refs/heads/svelte.zip"
       },
