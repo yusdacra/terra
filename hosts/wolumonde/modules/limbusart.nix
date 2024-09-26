@@ -33,8 +33,8 @@ in {
   };
   users.groups.limbusart = {};
 
-  services.nginx.virtualHosts."limbus.company" = {
-    useACMEHost = "limbus.company";
+  services.nginx.virtualHosts."limbus.gaze.systems" = {
+    useACMEHost = "gaze.systems";
     forceSSL = true;
     locations."/".proxyPass = "http://localhost:3000";
   };
