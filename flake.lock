@@ -100,14 +100,14 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1727370985,
-        "narHash": "sha256-dDUEMxoG3aaSDEoseVW7dapRnHIdgQkLQiFwPjo+dXQ=",
-        "path": "/home/firewatch/website",
-        "type": "path"
+        "lastModified": 1727382403,
+        "narHash": "sha256-ewGsUhNxIYv0g/a9GGa3cMlKXGgsSK14xgnr9JoT1zs=",
+        "type": "tarball",
+        "url": "https://git.gaze.systems/gazesys/website/releases/download/latest/source.tgz"
       },
       "original": {
-        "path": "/home/firewatch/website",
-        "type": "path"
+        "type": "tarball",
+        "url": "https://git.gaze.systems/gazesys/website/releases/download/latest/source.tgz"
       }
     },
     "conduit": {
