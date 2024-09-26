@@ -3,5 +3,6 @@
     url = config.services.gitea.settings.server.ROOT_URL;
     name = "thermex";
     tokenFile = config.age.secrets.giteaActRunnerToken.path;
+    labels = ["native:host"];
   };
 }

@@ -100,14 +100,14 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1727314821,
-        "narHash": "sha256-AIKKS9U3K6ZZst44HjkcZBncy+Nbx1QrGfO8rnD6e60=",
-        "type": "tarball",
-        "url": "https://github.com/yusdacra/website/archive/refs/heads/svelte.zip"
+        "lastModified": 1727366047,
+        "narHash": "sha256-qeJQilEismXQ6pBUepB5LqrjvqRXYqiC9mkHH9ii28Q=",
+        "path": "/home/kirara/proj/website",
+        "type": "path"
       },
       "original": {
-        "type": "tarball",
-        "url": "https://github.com/yusdacra/website/archive/refs/heads/svelte.zip"
+        "path": "/home/kirara/proj/website",
+        "type": "path"
       }
     },
     "conduit": {

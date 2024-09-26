@@ -23,7 +23,7 @@
 
     helix.url = "github:helix-editor/helix";
 
-    blog.url = "https://github.com/yusdacra/website/archive/refs/heads/svelte.zip";
+    blog.url = "path:/home/kirara/proj/website";
     blog.inputs.nixpkgs.follows = "nixpkgs";
 
     bernbot.url = "github:yusdacra/bernbot";
