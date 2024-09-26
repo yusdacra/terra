@@ -16,7 +16,7 @@
       nodejs
       wget
       gnutar
-      xz
+      gzip
     ];
   };
 }
