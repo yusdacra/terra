@@ -10,7 +10,7 @@
       coreutils
       curl
       gawk
-      gitMinimal
+      git
       git-lfs
       gnused
       nodejs
