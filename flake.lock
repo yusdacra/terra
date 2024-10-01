@@ -100,8 +100,8 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1727748493,
-        "narHash": "sha256-62wWRIw12TR9DNFi2a9L23TEO8dOvr4mhr3lfpfXVpo=",
+        "lastModified": 1727795645,
+        "narHash": "sha256-yJZbfE3UIqNDCHNNs+73eToN4MMpq3UxnhOEzYTrfGo=",
         "type": "tarball",
         "url": "https://git.gaze.systems/gazesys/website/releases/download/latest/source.tgz"
       },
@@ -831,9 +831,7 @@
       "inputs": {
         "crane": "crane_5",
         "flake-utils": "flake-utils_5",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs_3",
         "rust-overlay": "rust-overlay_3"
       },
       "locked": {
@@ -907,18 +905,16 @@
     "musikspider": {
       "inputs": {
         "naked-shell": "naked-shell_2",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs_4",
         "parts": "parts_6",
         "systems": "systems_7"
       },
       "locked": {
-        "lastModified": 1723715455,
-        "narHash": "sha256-GmBynY82IeacbiiO9S8dhnDBml2r6OvspYuBsZoY/Nk=",
+        "lastModified": 1727794399,
+        "narHash": "sha256-doNFB1C7K0z36StYlR/zIpRIfMtT5aj15IRfZ6MGvCo=",
         "ref": "refs/heads/master",
-        "rev": "7faeca9458d45a7a3d245bad8493aa78dc716fe2",
-        "revCount": 43,
+        "rev": "73598860aad3179c986a0d0d6270bdc2603f04b9",
+        "revCount": 44,
         "type": "git",
         "url": "https://git.gaze.systems/dusk/musikspider.git"
       },
@@ -1175,14 +1171,14 @@
     },
     "nixpkgs-lib": {
       "locked": {
-        "lastModified": 1722555339,
-        "narHash": "sha256-uFf2QeW7eAHlYXuDktm9c25OxOyCoUOQmh5SZ9amE5Q=",
+        "lastModified": 1725233747,
+        "narHash": "sha256-Ss8QWLXdr2JCBPcYChJhz4xJm+h/xjl4G0c0XlP6a74=",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/a5d394176e64ab29c852d03346c1fc9b0b7d33eb.tar.gz"
+        "url": "https://github.com/NixOS/nixpkgs/archive/356624c12086a18f2ea2825fed34523d60ccc4e3.tar.gz"
       },
       "original": {
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/a5d394176e64ab29c852d03346c1fc9b0b7d33eb.tar.gz"
+        "url": "https://github.com/NixOS/nixpkgs/archive/356624c12086a18f2ea2825fed34523d60ccc4e3.tar.gz"
       }
     },
     "nixpkgs-lib_2": {
@@ -1297,6 +1293,38 @@
     },
     "nixpkgs_3": {
       "locked": {
+        "lastModified": 1716715802,
+        "narHash": "sha256-usk0vE7VlxPX8jOavrtpOqphdfqEQpf9lgedlY/r66c=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e2dd4e18cc1c7314e24154331bae07df76eb582f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
+        "lastModified": 1723637854,
+        "narHash": "sha256-med8+5DSWa2UnOqtdICndjDAEjxr5D7zaIiK4pn0Q7c=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "c3aa7b8938b17aebd2deecf7be0636000d62a2b9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_5": {
+      "locked": {
         "lastModified": 1724224976,
         "narHash": "sha256-Z/ELQhrSd7bMzTO8r7NZgi9g5emh+aRKoCdaAv5fiO0=",
         "owner": "nixos",
@@ -1397,11 +1425,11 @@
         "nixpkgs-lib": "nixpkgs-lib"
       },
       "locked": {
-        "lastModified": 1722555600,
-        "narHash": "sha256-XOQkdLafnb/p9ij77byFQjDf5m5QYl9b2REiVClC+x4=",
+        "lastModified": 1726153070,
+        "narHash": "sha256-HO4zgY0ekfwO5bX0QH/3kJ/h4KvUDFZg8YpkNwIbg1U=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "8471fe90ad337a8074e957b69ca4d0089218391d",
+        "rev": "bcef6817a8b2aa20a5a6dbb19b43e63c5bf8619a",
         "type": "github"
       },
       "original": {
@@ -1679,7 +1707,7 @@
         "nixos-hardware": "nixos-hardware",
         "nixos-persistence": "nixos-persistence",
         "nixos-wsl": "nixos-wsl",
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": "nixpkgs_5",
         "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-wayland": "nixpkgs-wayland",
         "nixtopo": "nixtopo",

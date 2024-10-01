@@ -51,10 +51,10 @@
     musikquad.inputs.nixpkgs.follows = "nixpkgs";
 
     musikspider.url = "git+https://git.gaze.systems/dusk/musikspider.git";
-    musikspider.inputs.nixpkgs.follows = "nixpkgs";
+    # musikspider.inputs.nixpkgs.follows = "nixpkgs";
 
     limbusart.url = "git+https://git.gaze.systems/dusk/limbusart.git";
-    limbusart.inputs.nixpkgs.follows = "nixpkgs";
+    # limbusart.inputs.nixpkgs.follows = "nixpkgs";
 
     nh.url = "github:viperML/nh";
     nh.inputs.nixpkgs.follows = "nixpkgs";
