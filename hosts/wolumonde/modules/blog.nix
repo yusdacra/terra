@@ -7,7 +7,6 @@
   PUBLIC_BASE_URL = "https://gaze.systems";
   pkg = inputs.blog.packages.${pkgs.system}.default.overrideAttrs (old: {
     inherit PUBLIC_BASE_URL;
-    GUESTBOOK_BASE_URL = "http://localhost:8080";
   });
   port = 3003;
 in {
@@ -25,6 +24,8 @@ in {
       HOME = "/var/lib/website";
       ORIGIN = PUBLIC_BASE_URL;
       PORT = toString port;
+      GUESTBOOK_BASE_URL = "http://localhost:8080";
+      WEBSITE_DATA_DIR = "/var/lib/website";
     };
     serviceConfig = {
       User = "website";
