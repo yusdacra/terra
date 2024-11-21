@@ -100,8 +100,8 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1727795645,
-        "narHash": "sha256-yJZbfE3UIqNDCHNNs+73eToN4MMpq3UxnhOEzYTrfGo=",
+        "lastModified": 1731969219,
+        "narHash": "sha256-FkzplQ6ro4XeiPzm6tOY4zhI4Tw/iwQ/nOQU+f3biLk=",
         "type": "tarball",
         "url": "https://git.gaze.systems/gazesys/website/releases/download/latest/source.tgz"
       },
@@ -835,11 +835,11 @@
         "rust-overlay": "rust-overlay_3"
       },
       "locked": {
-        "lastModified": 1718118942,
-        "narHash": "sha256-kYj27WotKcbDsaxjByFPvAfRDQFpKqld5TXQevCh3b4=",
+        "lastModified": 1730541623,
+        "narHash": "sha256-/R+fLHxZHn3eTlpWObgHw/yrj+Ap7gb+HZtAwn6DnNE=",
         "ref": "refs/heads/master",
-        "rev": "3e7076c748ef19c1fb23fe2631337240440d6f04",
-        "revCount": 37,
+        "rev": "a32954e841bf66819b5e584831417451f342b819",
+        "revCount": 40,
         "type": "git",
         "url": "https://git.gaze.systems/dusk/limbusart.git"
       },

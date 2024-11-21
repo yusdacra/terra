@@ -20,7 +20,9 @@
         "mq.gaze.systems"
         "couchdb.gaze.systems"
         "doc.gaze.systems"
+        "pmart.gaze.systems"
         "limbus.gaze.systems"
+        "bsky.gaze.systems"
       ];
     };
   };

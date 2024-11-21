@@ -13,4 +13,14 @@ in {
       alias ${wellKnownFile}/;
     '';
   };
+  # redirect any requests to my profile
+  services.nginx.virtualHosts."bsky.gaze.systems" = {
+    useACMEHost = "gaze.systems";
+    forceSSL = true;
+    extraConfig = ''
+      location / {
+        return 301 https://bsky.app/profile/gaze.systems$request_uri;
+      }
+    '';
+  };
 }

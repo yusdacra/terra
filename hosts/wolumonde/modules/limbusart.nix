@@ -33,9 +33,15 @@ in {
   };
   users.groups.limbusart = {};
 
-  services.nginx.virtualHosts."limbus.gaze.systems" = {
+  services.nginx.virtualHosts."pmart.gaze.systems" = {
     useACMEHost = "gaze.systems";
     forceSSL = true;
     locations."/".proxyPass = "http://localhost:3000";
+  };
+  # redirects
+  services.nginx.virtualHosts."limbus.gaze.systems" = {
+    useACMEHost = "gaze.systems";
+    forceSSL = true;
+    globalRedirect = "pmart.gaze.systems";
   };
 }
