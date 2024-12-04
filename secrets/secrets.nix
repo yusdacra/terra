@@ -11,4 +11,5 @@ in {
   "tmodloaderServerPass.age".publicKeys = [yusdacra wolumonde];
   "websiteConfig.age".publicKeys = [yusdacra wolumonde];
   "giteaActRunnerToken.age".publicKeys = [yusdacra wolumonde];
+  "xrayConfig.age".publicKeys = [yusdacra wolumonde];
 }

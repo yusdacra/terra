@@ -1,0 +1,23 @@
+{lib, config, ...}: {
+  services.xray = {
+    enable = true;
+    settingsFile = config.age.secrets.xrayConfig.path;
+  };
+  users.groups.xray = {};
+  users.users.xray = {
+    group = "xray";
+    isSystemUser = true;
+  };
+  systemd.services.xray.serviceConfig = {
+    User = "xray";
+    Group = "xray";
+    DynamicUser = lib.mkForce false;
+    RuntimeDirectory = "xray";
+    ProtectSystem = "strict";
+    ProtectHome = "read-only";
+    PrivateTmp = "yes";
+    RemoveIPC = "yes";
+  };
+  networking.firewall.allowedUDPPorts = [1080];
+  networking.firewall.allowedTCPPorts = [1080];
+}
