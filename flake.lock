@@ -100,8 +100,8 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1733266129,
-        "narHash": "sha256-ez4R0WpHSZ5mVit5uh5qiQ/ljpkhh7fQZDiQkHL/rCc=",
+        "lastModified": 1737049415,
+        "narHash": "sha256-T6Vl8QdyVZBfEPF0kDuH7UsiCBkqq/8w0QA4T8uHM0Y=",
         "type": "tarball",
         "url": "https://git.gaze.systems/gazesys/website/releases/download/latest/source.tgz"
       },

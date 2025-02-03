@@ -26,6 +26,7 @@ in {
       PORT = toString port;
       GUESTBOOK_BASE_URL = "http://localhost:8080";
       WEBSITE_DATA_DIR = "/var/lib/website";
+      VITE_CLOUDINARY_CLOUD_NAME = "dgtwf7mar";
     };
     serviceConfig = {
       User = "website";
