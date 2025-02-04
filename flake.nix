@@ -29,8 +29,8 @@
     bernbot.url = "github:yusdacra/bernbot";
     bernbot.inputs.nixpkgs.follows = "nixpkgs";
 
-    conduit.url = "gitlab:famedly/conduit/next";
-    conduit.inputs.nixpkgs.follows = "nixpkgs";
+    # conduit.url = "gitlab:famedly/conduit/next";
+    # conduit.inputs.nixpkgs.follows = "nixpkgs";
 
     # nil.url = "github:oxalica/nil";
     # nil.inputs.nixpkgs.follows = "nixpkgs";
@@ -47,10 +47,10 @@
     agenix.url = "github:ryantm/agenix";
     agenix.inputs.nixpkgs.follows = "nixpkgs";
 
-    musikquad.url = "git+https://git.gaze.systems/dusk/musikquadrupled.git";
-    musikquad.inputs.nixpkgs.follows = "nixpkgs";
+    # musikquad.url = "git+https://git.gaze.systems/dusk/musikquadrupled.git";
+    # musikquad.inputs.nixpkgs.follows = "nixpkgs";
 
-    musikspider.url = "git+https://git.gaze.systems/dusk/musikspider.git";
+    # musikspider.url = "git+https://git.gaze.systems/dusk/musikspider.git";
     # musikspider.inputs.nixpkgs.follows = "nixpkgs";
 
     limbusart.url = "git+https://git.gaze.systems/dusk/limbusart.git";

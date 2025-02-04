@@ -12,4 +12,5 @@ in {
   "websiteConfig.age".publicKeys = [yusdacra wolumonde];
   "giteaActRunnerToken.age".publicKeys = [yusdacra wolumonde];
   "xrayConfig.age".publicKeys = [yusdacra wolumonde];
+  "pdsConfig.age".publicKeys = [yusdacra wolumonde];
 }

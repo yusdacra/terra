@@ -17,4 +17,5 @@
     # owner = "xray";
     # group = "xray";
   };
+  age.secrets.pdsConfig.file = ../../../secrets/pdsConfig.age;
 }
