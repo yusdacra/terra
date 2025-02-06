@@ -23,7 +23,7 @@
 
     helix.url = "github:helix-editor/helix";
 
-    blog.url = "https://git.gaze.systems/gazesys/website/releases/download/latest/source.tgz";
+    blog.url = "git+https://git.gaze.systems/gazesys/website.git?ref=refs/tags/latest";
     blog.inputs.nixpkgs.follows = "nixpkgs";
 
     bernbot.url = "github:yusdacra/bernbot";
